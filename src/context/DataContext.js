@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { format } from "date-fns";
 import api from "../utils/api";
 import useFetch from "../utils/useFetch";
+import { FETCH_URL} from "../utils/constant";
 
 // custom context
 const DataContext = createContext({});
@@ -18,7 +19,7 @@ export const DataProvider = ({ children }) => {
 
   const navigate = useNavigate();
 
-  const [allBlogs,error] = useFetch("http://localhost:3500/posts");
+  const [allBlogs,error] = useFetch(FETCH_URL);
 
   useEffect(() => {
     setPosts(allBlogs);
