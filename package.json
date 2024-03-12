@@ -2,10 +2,9 @@
   "name": "blog-app",
   "version": "1.0.0",
   "description": "bloging app",
-  "main": "index.js",
   "scripts": {
     "start": "parcel public/index.html",
-    "build": "parcel public/build index.html"
+    "build": "parcel build public/index.html"
   },
   "author": "Anthony M",
   "license": "ISC",
