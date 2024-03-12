@@ -20,7 +20,6 @@ export const DataProvider = ({ children }) => {
   const navigate = useNavigate();
 
   const [allBlogs,error] = useFetch(FETCH_URL);
-  console.log(allBlogs);
 
   useEffect(() => {
     setPosts(allBlogs);
