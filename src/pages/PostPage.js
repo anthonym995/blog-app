@@ -10,9 +10,9 @@ const PostPage = () => {
   let post = posts.find((post) => post.id == id);
 
   return (
-    <section className="flex-1">
-      <div className="container mx-auto">
-        <article className=" ">
+    <section className="flex-1 overflow-y-scroll">
+      <div className="container mx-auto ">
+        <article className="">
           <h2 className="text-2xl  m-2 mb-5">Full Post:</h2>
           <div className="border p-5 m-2 mb-5 rounded-md shadow bg-[#f9f9f9] flex flex-col">
             <h2 className="text-3xl mb-3 text-[#333]">{post?.title}</h2>
@@ -27,7 +27,7 @@ const PostPage = () => {
               >
                 <RiDeleteBinLine className="text-red-500 text-2xl" />
               </button>
-              <Link to={`/edit/${post?.id}`} >
+              <Link to={`/edit/${post?.id}`}>
                 <button className="w-24 px-3 py-2 rounded-md border flex justify-center bg-slate-100 shadow-md">
                   <FaRegEdit className="text-orange-500 text-2xl" />
                 </button>

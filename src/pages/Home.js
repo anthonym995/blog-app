@@ -11,7 +11,7 @@ const Home = () => {
     <Shimmer />
   ) : (
     <>
-      <nav className="py-3 shadow sticky top-0">
+      <nav className="py-3 sticky top-0">
         <div className="container mx-auto px-5">
           <form
             className="rounded-full px-2 py-1 border border-black flex mx-auto"

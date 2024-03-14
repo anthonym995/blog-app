@@ -6,14 +6,11 @@ const CreatePost = () => {
     useContext(DataContext);
 
   return (
-    <section className="flex-1">
+    <section className="flex-1 overflow-y-auto">
       <div className="container mx-auto w">
         <h2 className="text-2xl mt-3 mb-4 text-center">Create Post</h2>
 
-        <form
-          className="flex flex-col border p-4"
-          onSubmit={handleSubmit}
-        >
+        <form className="flex flex-col border p-4" onSubmit={handleSubmit}>
           <label htmlFor="post-title" className="mb-3">
             Title:
           </label>
