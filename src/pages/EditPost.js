@@ -8,8 +8,6 @@ const EditPost = () => {
   const { id } = useParams();
   let post = posts.find((post) => post.id === id);
 
-  console.log(post);
-
   useEffect(() => {
     if (post) {
       setEditTitle(post.title);

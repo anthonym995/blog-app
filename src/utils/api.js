@@ -1,9 +1,8 @@
 import axios from "axios";
 
 export default axios.create({
-
   // for deployment
-  baseURL: "https://blogs-qwux.onrender.com/",
+  baseURL: "https://inquisitive-midnight-danger.glitch.me/",
 
   // for local
   // baseURL: "http://localhost:3500/",
